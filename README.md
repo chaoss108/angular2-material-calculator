@@ -12,7 +12,7 @@ A simple Angular2 calculator inspired by Google's Material Design.
 4. Open your localhost and start calculating!
 
 # Buttons
-There are 23 different buttons - 10 numbers, 8 operators and 5 memory functions. You can add new buttons in the ButtonsList class and then define the method in CalculatorService.
+There are 23 different buttons - 10 numbers, 8 operators and 5 memory functions. You can add new buttons in the ButtonsList class and then define the method in buttons component.
 
 # Info
 This is my very first Angular2 project, written without any previous experiences with Angular2 or TypeScript. I will try to improve it as I learn new techniques and practices in Angular2.
