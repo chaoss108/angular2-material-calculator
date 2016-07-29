@@ -18,4 +18,4 @@ There are 23 different buttons - 10 numbers, 8 operators and 5 memory functions.
 This is my very first Angular2 project, written without any previous experiences with Angular2 or TypeScript. I will try to improve it as I learn new techniques and practices in Angular2.
 
 # Author
-Author: chaoss108
+* Author: chaoss108
