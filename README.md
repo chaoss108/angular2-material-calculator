@@ -1,6 +1,6 @@
 # angular2-material-calculator
 
-**Angular2 calculator inspired by Material Design**
+**Angular2 calculator inspired by Material Design.**
 
 # Description
 A simple Angular2 calculator inspired by Google's Material Design.
