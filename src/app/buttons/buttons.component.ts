@@ -28,7 +28,7 @@ export class ButtonsComponent {
 		if(this.reset_on_click){
 			this.reset();
 		}
-		if(!this.calc_service.is_reseted && num != 0){
+		if(!this.calc_service.is_reseted){
 			this.calc_service.equation += num;
 			this.calc_service.can_add_operator = true;
 		}else if(num != 0){
