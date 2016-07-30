@@ -1,0 +1,31 @@
+button, button:focus{
+	width: 20%;
+	height: 20%;
+	vertical-align: top;
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	line-height:1;
+	color: white;
+	font-size: 19px;
+	cursor: pointer;
+	font-weight: 100;
+	outline: 0;
+	font-family: Roboto;
+}
+
+.button-number{
+	background-color: #212121;
+}
+
+.button-operator{
+	background-color: #424242;
+}
+
+.button-memory{
+	background-color: #00C853;
+	color: #212121!important;
+}

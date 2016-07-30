@@ -1,0 +1,12 @@
+<ul id='saved-results-list'>
+	<li class='saved-results-item' *ngFor="let item of result_list" id='{{item.id}}'>
+		<div class='saved-results-item-wrapper'>
+			<div class='saved-results-item-text'>
+				<div class='saved-results-item-value'>{{item.value}}</div>
+				<div class='saved-results-item-equation'>{{item.equation}} = </div>
+			</div>
+			<div class='saved-results-item-delete' (click)="calc_service.removeFromResultList(item.id)"></div>
+		</div>
+		<div class='saved-results-item-divider'></div>
+	</li>
+</ul>

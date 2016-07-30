@@ -1,0 +1,47 @@
+ul{
+	padding: 0;
+	padding-top: 4px;
+	margin: 0;
+}
+
+li{
+	width: 100%;
+	list-style: none;
+}
+
+.saved-results-item-wrapper{
+	padding: 5px 16px 8px 16px;
+}
+
+.saved-results-item-divider{
+	width: 100%;
+	height: 1px;
+	background-color: #E0E0E0;
+	display: block;
+}
+
+.saved-results-item-value{
+	font-size: 28px;
+	color: #212121;
+}
+
+.saved-results-item-equation{
+	font-size: 12px;
+	color: #757575;
+}
+
+.saved-results-item-delete{
+	float: right;
+	width: 49px;
+	height: 49px;
+	background-image: url('cancel.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	display:inline-block;
+	cursor: pointer;
+}
+
+.saved-results-item-text{
+	display:inline-block;
+}
