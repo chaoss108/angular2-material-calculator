@@ -1,0 +1,1 @@
+<button *ngFor="let button of buttons"  (click)="button.action != undefined? button.action(): null" class="{{button.class}}">{{button.value}}</button>
