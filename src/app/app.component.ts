@@ -5,7 +5,6 @@ import {CalculatorComponent} from './calculator/calculator.component';
   moduleId: module.id,
   selector: 'calculator',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
   directives: [CalculatorComponent]
 })
 
