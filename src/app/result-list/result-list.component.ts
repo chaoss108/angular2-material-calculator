@@ -3,7 +3,11 @@ import {CalculatorService} from '../calculator.service';
 
 @Component({
   moduleId: module.id,
+<<<<<<< HEAD
   selector: 'saved-results',
+=======
+  selector: '[id=saved-results-section]',
+>>>>>>> origin/master
   templateUrl: 'result-list.component.html',
   styleUrls: ['result-list.component.css']
 })

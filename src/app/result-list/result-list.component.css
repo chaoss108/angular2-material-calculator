@@ -9,6 +9,7 @@ li{
 	list-style: none;
 }
 
+<<<<<<< HEAD
 .saved-results-item-text{
 	display:inline-block;
 }
@@ -27,6 +28,8 @@ li{
 	padding: 2px;
 }
 
+=======
+>>>>>>> origin/master
 .saved-results-item-wrapper{
 	padding: 5px 16px 8px 16px;
 }
@@ -58,4 +61,11 @@ li{
 	background-size: 32px 32px;
 	display:inline-block;
 	cursor: pointer;
+<<<<<<< HEAD
+=======
+}
+
+.saved-results-item-text{
+	display:inline-block;
+>>>>>>> origin/master
 }
