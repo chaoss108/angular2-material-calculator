@@ -4,8 +4,4 @@
 
 export const environment = {
   production: false
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> origin/master

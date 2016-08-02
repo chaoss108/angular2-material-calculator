@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 saved-results{
 	display: block;
-=======
-#saved-results-section{
->>>>>>> origin/master
 	width: 100%;
 	height: 30%;
 	background-color: #FAFAFA;
@@ -11,29 +7,9 @@ saved-results{
 	overflow-y: scroll;
 }
 
-<<<<<<< HEAD
 calculator-display{
 	display: block;
 	height: 10%;
-=======
-#saved-results-list{
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
-}
-
-.saved-results-item{
-	width: 100%;
-	padding: 2px;
-}
-
-#display-section{
-	height: 10%;
-}
-#display-section div{
-	height: 100%;
->>>>>>> origin/master
 	text-align: right;
 	font-size: 10vh;
 	line-height: 100%;
@@ -41,11 +17,7 @@ calculator-display{
 	overflow-x: auto;
 }
 
-<<<<<<< HEAD
 calculator-buttons{
 	display: block;
-=======
-#buttons-section{
->>>>>>> origin/master
 	height: 60%;
 }
