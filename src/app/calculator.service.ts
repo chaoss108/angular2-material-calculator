@@ -49,7 +49,7 @@ export class CalculatorService {
 			id: id,
 			value: value,
 			equation: equation
-		})
+		});
 	}
 
 	/*

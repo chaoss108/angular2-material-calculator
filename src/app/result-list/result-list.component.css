@@ -9,6 +9,24 @@ li{
 	list-style: none;
 }
 
+.saved-results-item-text{
+	display:inline-block;
+}
+
+
+
+.saved-results-list{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.saved-results-item{
+	width: 100%;
+	padding: 2px;
+}
+
 .saved-results-item-wrapper{
 	padding: 5px 16px 8px 16px;
 }
@@ -40,8 +58,4 @@ li{
 	background-size: 32px 32px;
 	display:inline-block;
 	cursor: pointer;
-}
-
-.saved-results-item-text{
-	display:inline-block;
 }
