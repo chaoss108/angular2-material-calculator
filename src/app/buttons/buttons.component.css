@@ -3,7 +3,7 @@
 	height: 60%;
 }
 
-button, button:focus {
+:host button, :host button:focus {
 	width: 20%;
 	height: 20%;
 	vertical-align: top;
@@ -22,15 +22,15 @@ button, button:focus {
 	font-family: Roboto;
 }
 
-.button-number{
+:host .button-number{
 	background-color: #212121;
 }
 
-.button-operator{
+:host .button-operator{
 	background-color: #424242;
 }
 
-.button-memory{
+:host .button-memory{
 	background-color: #00C853;
 	color: #212121!important;
 }

@@ -5,7 +5,7 @@
 	font-family: Roboto;
 }
 
-calculator-display{
+:host calculator-display{
 	display: block;
 	height: 10%;
 	text-align: right;
