@@ -90,11 +90,14 @@ export class ButtonsComponent {
 	 * adds the result to the result list
 	*/
 	equal(){
-		let eq = this.calc_service.equation;
+		let eq:string = this.calc_service.equation;
+		// replaces the M characters by memory value
 		if(eq.indexOf('M') != -1 && this.calc_service.memory != null){
 			eq = this.calc_service.equation.split('M').join(this.calc_service.memory.toString());
 		}
+		// saves result
 		this.calc_service.result = this.solve(eq);
+		// if result is valid, saves result to result-list
 		if(this.calc_service.result != null && eq != '0'){
 			this.calc_service.equation = this.calc_service.result.toString();
 			this.calc_service.addToResultList(this.calc_service.result, eq);
