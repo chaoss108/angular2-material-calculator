@@ -57,6 +57,7 @@ export class CalculatorService {
 	 * @param id - the id of result item to be deleted
 	*/
 	public removeFromResultList(id: number){
+		// iterates over result-list items until id matches; then deletes
 		for(var i = 0; i < this.result_list.length; i++) {
 		    if(this.result_list[i].id == id) {
 		        this.result_list.splice(i, 1);
