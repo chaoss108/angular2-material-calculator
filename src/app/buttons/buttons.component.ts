@@ -27,10 +27,10 @@ export class ButtonsComponent {
 	 * adds a number to equation.
 	 * @param num - number to be added
 	*/
-	addNumber(num: number){
+	addNumber(num: number): void{
 		// if characters can't be added, returns false and does nothing
 		if(this.calc_service.getEquationLength() >= this.calc_service.digit_limit){
-			return false;
+			return;
 		}
 		// if the last pushed button was the equal button, resets the calculator
 		if(this.reset_on_click){
@@ -51,10 +51,10 @@ export class ButtonsComponent {
 	 * adds an operator to equation string
 	 * @param operator - operator to be added
 	*/
-	addOperator(operator: string){
-		// if characters can't be added, returns false and does nothing
+	addOperator(operator: string): void {
+		// if characters can't be added, returns and does nothing
 		if(this.calc_service.getEquationLength() >= this.calc_service.digit_limit){
-			return false;
+			return;
 		}
 		// if the last pushed button was the equal button, resets the calculator
 		if(this.reset_on_click){
@@ -77,7 +77,7 @@ export class ButtonsComponent {
 	 * @param eq - string to solve
 	 * @returns {number} solved value; or {null} if can't be solved
 	*/
-	solve(eq: string){
+	solve(eq: string): number {
 		try{
 			return eval(eq);
 		}catch(Exception){
@@ -89,7 +89,7 @@ export class ButtonsComponent {
 	 * updates the result variable and equation string
 	 * adds the result to the result list
 	*/
-	equal(){
+	equal(): void {
 		let eq:string = this.calc_service.equation;
 		// replaces the M characters by memory value
 		if(eq.indexOf('M') != -1 && this.calc_service.memory != null){
@@ -109,11 +109,11 @@ export class ButtonsComponent {
 	/*
 	 * deletes the last character of equation string if it isn't resetted
 	*/
-	deleteLastChar(){
+	deleteLastChar(): void {
 		// if the last pushed button was equal, resets calculator instead
 		if(this.reset_on_click){
 			this.reset();
-			return true;
+			return;
 		}
 		if(this.calc_service.getEquationLength() != 1){
 			this.calc_service.equation = this.calc_service.equation.slice(0,-1);
@@ -129,7 +129,7 @@ export class ButtonsComponent {
 	 * resets calculator
 	 * sets equation string to "0"
 	*/
-	reset(){
+	reset(): void {
 		this.calc_service.equation = "0";
 		this.calc_service.can_add_operator = false;
 		this.calc_service.is_reseted = true;
@@ -139,7 +139,7 @@ export class ButtonsComponent {
 	 * saves a number to the memory
 	 * @param num - number to save
 	*/
-	saveMemory(num: number = this.solve(this.calc_service.equation)){
+	saveMemory(num: number = this.solve(this.calc_service.equation)): void {
 		if(num != null && !this.calc_service.is_reseted){
 			this.calc_service.memory = num;
 		}
@@ -148,7 +148,7 @@ export class ButtonsComponent {
 	/*
 	 * deletes the memory
 	*/
-	deleteMemory(){
+	deleteMemory(): void {
 		this.calc_service.memory = null;
 	}
 
@@ -156,7 +156,7 @@ export class ButtonsComponent {
 	 * takes the value from display and adds it to the memory variable (M + D)
 	 * if the value of equation string is valid
 	*/
-	memoryPlus(){
+	memoryPlus(): void {
 		let res:number = this.solve(this.calc_service.equation);
 		if(res != null){
 			this.saveMemory(this.calc_service.memory + res);
@@ -167,7 +167,7 @@ export class ButtonsComponent {
 	 * takes the value from display and makes a difference from the memory variable (M - D)
 	 * if the value of equation string is valid
 	*/
-	memoryMinus(){
+	memoryMinus(): void {
 		let res:number = this.solve(this.calc_service.equation);
 		if(res != null){
 			this.saveMemory(this.calc_service.memory - res);
@@ -177,10 +177,10 @@ export class ButtonsComponent {
 	/*
 	 * adds M to equation string, which will be replaced by the memory variable
 	*/
-	writeMemory(){
+	writeMemory(): void {
 		// if memory can't be written, returns false and does nothing
 		if(this.calc_service.getEquationLength() >= this.calc_service.digit_limit || this.wrote_memory || this.calc_service.memory == null){
-			return false;
+			return;
 		}
 		if(this.calc_service.is_reseted){	
 			this.calc_service.equation = "M";

@@ -33,7 +33,7 @@ export class CalculatorService {
 	/*
 	 * @returns {number} the length of equation string
 	*/
-	public getEquationLength(){
+	public getEquationLength(): number{
 		return this.equation.length;
 	}
 
@@ -42,7 +42,7 @@ export class CalculatorService {
 	 * @param value - numeric value to be added
 	 * @param equation - the equation string from which the result was calculated
 	*/
-	public addToResultList(value: number, equation: string){
+	public addToResultList(value: number, equation: string): void{
 		let id = this.result_list_ids[this.result_list_ids.length - 1]+1;
 		this.result_list_ids.push(id);
 		this.result_list.unshift({
@@ -56,7 +56,7 @@ export class CalculatorService {
 	 * removes record from the result-list component
 	 * @param id - the id of result item to be deleted
 	*/
-	public removeFromResultList(id: number){
+	public removeFromResultList(id: number): void{
 		// iterates over result-list items until id matches; then deletes
 		for(var i = 0; i < this.result_list.length; i++) {
 		    if(this.result_list[i].id == id) {
