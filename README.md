@@ -3,7 +3,7 @@
 **Angular2 calculator inspired by Material Design.**
 
 # Description
-A simple Angular2 calculator inspired by Google's Material Design. [Live demo](https://chaoss108.github.io/)
+A simple Angular2 calculator inspired by Google's Material Design.
 
 # Getting Started
 1. Clone this repo
